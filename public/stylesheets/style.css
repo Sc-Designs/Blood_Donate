@@ -1,3 +1,7 @@
+@font-face {
+  font-family: Night_Pumpkind;
+  src: url("/fonts/night-pumpkind-font/NightPumpkind-1GpGv.ttf");
+}
 *{
     margin: 0;
     padding: 0;
@@ -53,4 +57,7 @@ body::-webkit-scrollbar{
 }
 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
     background-color: #fff;
+}
+#heading{
+  font-family: Night_Pumpkind;
 }
