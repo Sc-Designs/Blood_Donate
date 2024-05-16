@@ -14,5 +14,8 @@ router.get("/blood", function (req, res, next) {
 router.get("/report", function (req, res, next) {
   res.send("Welcome report!");
 });
+router.get("/register", function (req, res, next) {
+  res.render('register');
+});
 
 module.exports = router;
