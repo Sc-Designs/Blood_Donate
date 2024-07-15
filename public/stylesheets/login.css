@@ -1,0 +1,20 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#big-circle{
+    background-image: radial-gradient(circle, #ff0000, #e91214, #d21d1f, #bb2426, #a4292a, #972a2a, #8a2a2a, #7d2a2a, #782828, #732525, #6e2323, #692121);
+    pointer-events: none;
+}
+#circle{
+    background-image: radial-gradient(circle, #ff0000, #e91214, #d21d1f, #bb2426, #a4292a, #972a2a, #8a2a2a, #7d2a2a, #782828, #732525, #6e2323, #692121);
+    pointer-events: none;
+}
+#button{
+    background-image: linear-gradient(to bottom, #ff6b00, #d44f1a, #a6371f, #78241c, #4b1515);
+}

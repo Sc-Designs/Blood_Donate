@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.circle{
+    background-image: linear-gradient(to right bottom, #ff7a7a, #e56d6d, #cb6161, #b25555, #994949);
+    pointer-events: none;
+}
+#bar{
+    background-image: linear-gradient(to bottom, #ffe5c3, #e5ccb0, #ccb49d, #b49f8b, #9c8b79);
+    opacity: 0.95;
+    pointer-events: none;
+}
+#circle{
+    background-image: radial-gradient(circle, #ffa8a8, #e59797, #cb8686, #b27575, #996565);
+    pointer-events: none;
+}
+#curcle{
+    background-image: radial-gradient(circle, #ff7a7a, #e57575, #cb7070, #b26b6b, #996565);
+    pointer-events: none;
+}
+#big-curcle{
+    background-color: transparent;
+    border:12vw solid #ff8080;
+    opacity: 0.6;
+    pointer-events: none;
+}
+#button{
+    background-image: linear-gradient(to bottom, #d74343, #bc3b3b, #a33333, #892b2b, #712323);
+}
+input[type="radio"]{
+    accent-color: red;
+}
+   

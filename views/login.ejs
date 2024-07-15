@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/stylesheets/login.css">
+    <link rel="shortcut icon" href="/images/1539992783.webp" type="image/x-icon">
+</head>
+<body>
+    <div class="container w-full h-screen overflow-hidden relative">
+        <div id="big-circle" class="w-[90vw] h-[90vw] absolute -translate-x-[50%] -translate-y-[50%] top-[50%] left-[50%] rounded-full z-10"></div>
+        <div id="circle" class="w-[20vw] h-[20vw] absolute -translate-x-[50%] -translate-y-[50%] top-[20%] left-[10.5%] rounded-full"></div>
+        <div id="circle" class="w-[20vw] h-[20vw] absolute -translate-x-[50%] -translate-y-[50%] top-[20%] -right-40 rounded-full z-20"></div>
+        <div id="circle" class="w-[20vw] h-[20vw] absolute -translate-x-[50%] -translate-y-[50%] -bottom-40 left-20 rounded-full z-20"></div>
+        <div id="circle" class="w-[20vw] h-[20vw] absolute -translate-x-[50%] -translate-y-[50%] -bottom-52 -right-60 rounded-full"></div>
+        <div class="w-full h-screen absolute top-0 left-0 flex justify-center items-center z-50">
+            <form action="/users/login" method="post" class="flex flex-col gap-y-5 relative">
+                <span class="flex gap-x-10 items-center">
+                    <span class="text-white text-xl font-mono uppercase">Email - </span>
+                    <input type="text" name="email" class="w-80 h-10 rounded-xl border-[1px] border-black outline-none px-2">
+                </span>
+                <span class="flex gap-x-10 items-center">
+                    <span class="text-white text-xl font-mono uppercase">Password - </span>
+                    <input type="Password" name="password" class="w-80 h-10 rounded-xl border-[1px] border-black outline-none px-2">
+                </span>
+                <input id="button" type="submit" value="Login" class="text-white cursor-pointer w-fit px-16 py-2 rounded-full font-semibold text-lg absolute -bottom-20 -translate-x-[50%] left-[50%]">
+            </form>
+            <span class="absolute bottom-52 text-lg flex gap-x-2">
+                <span class="text-white">if you have an account </span>
+                <a href="/users/register" class="underline text-zinc-100 hover:font-semibold w-24 text-center">- Sign-in -</a>
+            </span>
+        </div>
+    </div>
+</body>
+</html>

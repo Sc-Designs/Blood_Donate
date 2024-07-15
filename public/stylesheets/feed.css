@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body::-webkit-scrollbar{
+    width: 5px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: red;
+    border-radius: 10px;
+}
+::selection{
+    background-color: #ff220085;
+    color: black;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+.circle{
+    background-image: radial-gradient(circle, #ff6b00, #df551f, #bc4228, #97332a, #722828);
+    box-shadow: 2px 2px 20px #0000008f;
+    pointer-events: none;
+}
+#heading{
+    text-shadow: 2px 2px 10px #0000008f;
+}
+.uphalf-circle{
+    background-image: radial-gradient(circle, #ff0000, #da1015, #b41a1e, #8e1f21, #692121);
+    height: 15vw;
+    width: 30vw;
+    border-radius: 15vw 15vw 0 0;
+    rotate: 180deg;
+    box-shadow: 2px 2px 20px #0000008f;
+    pointer-events: none;
+}
+.downhalf-circle{
+    background-image: radial-gradient(circle, #ff0000, #da1015, #b41a1e, #8e1f21, #692121);
+    height: 15vw;
+    width: 30vw;
+    border-radius: 15vw 15vw 0 0;
+    box-shadow: 2px 2px 20px #0000008f;
+    pointer-events: none;
+}
+@media (max-width:650px) {
+    #top-circle{
+        top: -10%;
+    }
+    .container>.downhalf-circle{
+        top: 42%;
+    }
+    .container>.uphalf-circle{
+        top: 56%;
+    }
+}
+@media (max-width:400px) {
+    #top-circle{
+        top: -5%;
+        left: 5%;
+    }
+    .container>.downhalf-circle{
+        top: 46%;
+    }
+    .container>.uphalf-circle{
+        top: 56%;
+    }
+    #down-circle{
+        top: 95%;
+    }
+}
+@media (max-width:500px) {
+    #top-circle{
+        top: -5%;
+        left: 5%;
+    }
+    .container>.downhalf-circle{
+        top: 45%;
+    }
+    .container>.uphalf-circle{
+        top: 56%;
+    }
+    #down-circle{
+        top: 95%;
+    }
+}
+@media (max-width:350px) {
+    #top-circle{
+        top: -5%;
+        left: 5%;
+    }
+    .container>.downhalf-circle{
+        top: 46%;
+    }
+    .container>.uphalf-circle{
+        top: 56%;
+    }
+    #down-circle{
+        top: 95%;
+    }
+}
