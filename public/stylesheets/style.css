@@ -1,18 +1,14 @@
-@font-face {
-  font-family: Night_Pumpkind;
-  src: url("/fonts/night-pumpkind-font/NightPumpkind-1GpGv.ttf");
-}
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body::-webkit-scrollbar{
-    display: none;
+  display: none;
 }
 .swiper {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 .swiper-slide {
   font-size: 18px;
@@ -56,10 +52,7 @@ body::-webkit-scrollbar{
   transform: rotate(-90deg);
 }
 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
-    background-color: #fff;
-}
-#heading{
-  font-family: Night_Pumpkind;
+  background-color: #fff;
 }
 
 #donar>span{
@@ -92,7 +85,4 @@ body::-webkit-scrollbar{
 .img:hover img{
   scale:1.1;
   transition: scale 0.5s ease;
-}
-@media (max-width: 400px) {
-  
 }
