@@ -14,5 +14,8 @@ router.get("/profile", IsLoggedIn, async (req, res) => {
   const user = await User_Model.findOne(req.user);
   res.status(200).render("profile", { user: user });
 });
+router.get("/map", function(req, res){
+  res.status(200).render("map");
+})
 
 module.exports = router;
