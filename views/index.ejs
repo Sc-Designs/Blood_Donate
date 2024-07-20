@@ -10,7 +10,15 @@
   </head>
   <body>
     <div class="w-full min-h-screen bg-zinc-100">
-      <% include ./partials/navbar.ejs %>
+      <div class="flex h-16 fixed top-0 w-full px-5 z-50 bg-white">
+        <div class="w-[80%]">
+          <% include ./partials/navbar.ejs %>
+        </div>
+        <div class="flex gap-x-10 items-center w-[20%] justify-around px-14">
+          <a class="text-lg bg-blue-500 px-5 text-white rounded-lg py-1 hover:bg-blue-700" href="/users/login">Login</a>
+          <a class="text-lg bg-red-500 px-5 text-white rounded-lg py-1 hover:bg-red-700" href="/users/register">Register</a>
+        </div>
+      </div>
       <!-- TODO: slider part -->
       <div class="w-full relative lg:h-[35vw] md:h-[50vw] flex justify-center pt-1">
         <div class="swiper mySwiper w-[95%] mt-16">
@@ -50,7 +58,7 @@
       </div>
       <div class="w-full min-h-screen px-16">
         <h1 id="heading" class="mt-32  text-6xl font-bold uppercase text-center pb-4 border-b-4 w-fit border-black">Join us in saving lives through donation</h1>
-        <p  class="text-center pt-2 text-xl font-semibold mb-10">Every day, countless lives are saved through organ 🫀 and blood 🩸 donation. Be a part of this life-saving mission and make a difference today.</p>
+        <p  class="text-center pt-2 text-4xl w-4/6 mx-auto font-bold uppercase my-5 text-zinc-600 font-['Open_sans']">"Your blood and organs have the power to breathe life into others. Share that power."</p>
         <div class="w-full h-fit py-10">
           <div class="flex gap-x-52 px-10 items-center">
             <div class="img w-[35vw] h-96 rounded-lg overflow-hidden">
@@ -97,7 +105,7 @@
         </div>
       </div>
       <div class="bg-zinc-400 w-full h-[1px]"></div>
-      <div class="w-full py-10 px-5 h-fit mt-5">
+      <div class="w-full py-10 px-5 h-fit mt-5 overflow-x-hidden">
         <div class="circle-img w-full min-h-[40vh] flex gap-x-52 my-5">
           <img class="circle-item w-40 h-40 object-cover rounded-full" src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
           <img class="circle-item w-40 h-40 object-cover rounded-full" src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
@@ -112,6 +120,8 @@
           <img class="circle-item w-40 h-40 object-cover rounded-full" src="https://images.unsplash.com/photo-1517120026326-d87759a7b63b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
           <img class="circle-item w-40 h-40 object-cover rounded-full" src="https://images.unsplash.com/photo-1578496781985-452d4a934d50?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
         </div>
+        <h1 class="text-6xl w-4/5 text-zinc-500 leading-relaxed uppercase text-center -my-28 mx-auto font-black font-['Montserrat_Alternates']">"When you donate an organ, you donate a future."</h1>
+
         <h1 class="mt-20 text-9xl font-mono flex items-center justify-center gap-x-20 font-semibold">So Which was you <span class="text-red-600 text-[15vw] font-sans font-thin">?</span></h1>
         <div class="w-full h-fit flex justify-center gap-x-20 mt-20 items-center">
           <a href="">
@@ -130,8 +140,64 @@
         </div>
       </div>
       <div class="bg-zinc-400 w-full h-[1px] mb-5"></div>
-      <div class="w-full h-fit py-5 bg-zinc-800 text-white">
-        <div class="w-full h-fit flex justify-center items-center text-4xl pb-2 gap-x-10 text-zinc-400">
+      <div class="w-full h-fit py-5 bg-zinc-900 text-white">
+        <div class="footer py-16 px-10 flex justify-between text-lg text-zinc-400 font-semibold text-justify">
+  <div class=" leading-[2vw]">
+    <h4 class="text-white text-xl">Contact Us</h4>
+    <p class="text-base leading-[3.5vw]">Phone: 8001165553</p>
+    <p class="text-base leading-[3.5vw]">Email: nfgaming4523@gmail.com</p>
+    <p class="text-base leading-[3.5vw]">Address: 88,Steel Park,Durgapur - 713206</p>
+  </div>
+
+  <div class="w-32 leading-[2vw]">
+    <h4 class="text-white text-xl">Quick Links</h4>
+    <ul>
+      <li class="text-base leading-[3.5vw]"><a href="/about">About Us</a></li>
+      <li class="text-base leading-[3.5vw]"><a href="/donate">How to Donate</a></li>
+      <li class="text-base leading-[3.5vw]"><a href="/receive">How to Receive</a></li>
+      <li class="text-base leading-[3.5vw]"><a href="/faq">FAQs</a></li>
+    </ul>
+  </div>
+
+  <div class=" leading-[2vw]">
+    <h4 class="text-white text-xl">Legal</h4>
+    <ul>
+      <li class="text-base leading-[3.5vw]"><a href="/privacy-policy">Privacy Policy</a></li>
+      <li class="text-base leading-[3.5vw]"><a href="/terms">Terms & Conditions</a></li>
+      <li class="text-base leading-[3.5vw]"><a href="/disclaimer">Disclaimer</a></li>
+    </ul>
+  </div>
+  <div class=" leading-[2vw]">
+    <h4 class="text-white text-xl">Resources</h4>
+    <ul>
+      <li class="text-base leading-[3.5vw]"><a href="/blog">Blog</a></li>
+      <li class="text-base leading-[3.5vw]"><a href="/stories">Success Stories</a></li>
+      <li class="text-base leading-[3.5vw]"><a href="/events">Events</a></li>
+      <li class="text-base leading-[3.5vw]"><a href="/press">Press Releases</a></li>
+    </ul>
+  </div>
+  <div class=" leading-[2vw]">
+    <h4 class="text-white text-xl">Support</h4>
+    <ul>
+      <li class="text-base leading-[3.5vw]"><a href="/help">Help Center</a></li>
+      <li class="text-base leading-[3.5vw]"><a href="/contact">Contact Form</a></li>
+      <li class="text-base leading-[3.5vw]"><a href="/volunteer">Volunteer</a></li>
+    </ul>
+  </div>
+  <div class=" leading-[2vw]">
+    <h4 class="text-white text-xl">Donation</h4>
+    <ul>
+      <li class="text-base leading-[3.5vw]"><a href="/ways-to-donate">Ways to Donate</a></li>
+      <li class="text-base leading-[3.5vw]"><a href="/centers">Donation Centers</a></li>
+      <li class="text-base leading-[3.5vw]"><a href="/financial-donations">Financial Donations</a></li>
+    </ul>
+  </div>
+  <div class=" leading-[2vw]">
+    <h4 class="text-white text-xl mb-3">Accessibility</h4>
+    <p class="w-40 text-base leading-[2vw]">We are committed to making our website accessible to all.<br> <a class="font-bold text-lg" href="/accessibility">Learn more</a></p>
+  </div>
+        </div>
+        <div class="w-full h-fit flex justify-center items-center text-4xl pb-10 gap-x-10 text-zinc-400">
           <a href=""><i class="ri-facebook-circle-line hover:text-zinc-100 hover:drop-shadow-[0px_0px_10px_white]"></i></a>
           <a href=""><i class="ri-linkedin-box-fill hover:text-zinc-100 hover:drop-shadow-[0px_0px_10px_white]"></i></a>
           <a href=""><i class="ri-github-fill hover:text-zinc-100 hover:drop-shadow-[0px_0px_10px_white]"></i></a>

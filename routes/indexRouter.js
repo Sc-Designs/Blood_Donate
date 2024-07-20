@@ -17,5 +17,10 @@ router.get("/profile", IsLoggedIn, async (req, res) => {
 router.get("/map", function(req, res){
   res.status(200).render("map");
 })
-
+router.get("/feed", function(req, res){
+  res.status(200).render("feed");
+}) 
+router.get("/:anithing", function (req, res, next) {
+  res.status(200).render("error");
+});
 module.exports = router;
