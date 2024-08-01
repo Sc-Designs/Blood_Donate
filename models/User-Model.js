@@ -15,11 +15,6 @@ const UserSchema = mongoose.Schema({
   BloodGroup: String,
   Relation: String,
   Email: String,
-  Addhar_Number: {
-    type: Number,
-    unique: true,
-    required: true,
-  },
   DonationDate: {
     type: Array,
     default: [],
@@ -41,7 +36,7 @@ const UserSchema = mongoose.Schema({
     type: Array,
     default: [],
   },
-  Picture: Buffer,
+  image: Buffer,
   Verified: {
     type: Boolean,
     default: false,

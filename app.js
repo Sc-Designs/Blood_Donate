@@ -7,6 +7,10 @@ const expressSessions = require("express-session");
 const flash = require("connect-flash");
 const http = require("http");
 const socketio = require("socket.io");
+var bodyParser = require("body-parser");
+
+
+
 
 var app = express();
 const Server = http.createServer(app);
@@ -14,11 +18,14 @@ const io = socketio(Server);
 
 require("dotenv").config();
 
-var adminRouter = require("./routes/adminRouter");
-var bloodRouter = require("./routes/bloodRouter");
-var donarRouter = require("./routes/donarRouter");
-var indexRouter = require("./routes/indexRouter");
-var usersRouter = require("./routes/userRouter");
+const adminRouter = require("./routes/adminRouter");
+const bloodRouter = require("./routes/bloodRouter");
+const donarRouter = require("./routes/donarRouter");
+const indexRouter = require("./routes/indexRouter");
+const usersRouter = require("./routes/userRouter");
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+
 
 const db = require("./config/mongoose-connection");
 

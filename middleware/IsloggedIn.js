@@ -1,26 +1,30 @@
 const jwt = require("jsonwebtoken");
 const User_Model = require("../models/User-Model");
-// Middleware to verify to protect routes from malicious file
 
 module.exports = async (req, res, next) => {
-  if (
-    !req.cookies.token ||
-    req.cookies.token === undefined ||
-    req.cookies.token === null ||
-    req.cookies.token === ""
-  ) {
-    req.flash("error", "You must Login First!");
-    return res.redirect("/users/login");
-  }
   try {
-    const decoded = jwt.verify(req.cookies.token, process.env.JWT_KEY);
+    const token = req.cookies.token;
+    if (!token) {
+      req.flash("error", "You must be logged in first!");
+      return res.redirect("/users/login");
+    }
+
+    const decoded = jwt.verify(token, process.env.JWT_KEY);
+
     const user = await User_Model.findOne({ Email: decoded.email }).select(
       "-password"
     );
+
+    if (!user) {
+      req.flash("error", "User not found!");
+      res.clearCookie("token");
+      return res.redirect("/users/login");
+    }
+
     req.user = user;
     next();
   } catch (error) {
-    req.flash("error", "Something went Wrong!");
+    req.flash("error", "Something went wrong!");
     res.clearCookie("token");
     return res.redirect("/users/login");
   }

@@ -59,15 +59,23 @@
       class="rounded-full w-[32vw] h-[32vw] big-curcle fixed top-[15%] left-[87%] -translate-x-[50%] z-10"></div>
     <div
       class="rounded-full w-52 h-52 fixed top-12 left-[50%] -translate-x-[50%] z-50">
+      <% if(base64Image){ %>
       <img
         class="w-full h-full object-cover rounded-full"
-        src="https://images.unsplash.com/photo-1715966966827-25a227141ee9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        src="data:image/jpeg;base64,<%= base64Image %>"
         alt="" />
+        <% }else { %>
+          <img
+        class="w-full h-full object-cover rounded-full"
+        src="https://images.unsplash.com/photo-1722352567372-a826494a5cb9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="" />
+          <% } %>
       <i id="edit" class="ri-pencil-fill absolute bottom-3 right-3 bg-zinc-200 px-2 py-1 rounded-full text-xl"></i>
     </div>
-    <form action="">
-      <input type="file" name="" id="pic" class="hidden">
-      <input type="button" value="" id="btn">
+    <form action="/upload" method="post" enctype="multipart/form-data">
+      <input type="email" name="email" id="" value="<%= user.Email %>">
+      <input type="file" name="image" id="pic" class="hidden">
+      <input type="submit" value="Upload" id="btn" class="hidden">
     </form>
     <div
       id="card"
@@ -110,10 +118,10 @@
   let edit = document.getElementById('edit');
   let pic = document.getElementById('pic');
   let btn = document.getElementById('btn');
-  edit.addEventListener('click', () => {
+  edit.addEventListener('click', function() {
     pic.click();
   });
-  pic.addEventListener('change', () => {
+  pic.addEventListener('change', function() {
     btn.click();
   })
 </script>

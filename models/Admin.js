@@ -27,7 +27,10 @@ const AdminSchema = mongoose.Schema({
     type: Date,
     default: Date.now,
   },
-  Admin_Picture: String,
+  Admin_Picture: {
+    type: Buffer,
+    default: "Null",
+  },
   Admin_GST_No: String,
   Admin_Phone: {
     type: String,
