@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 const BloodSchema = mongoose.Schema({
   Capacity_Blood: {
     type: Number,
@@ -77,4 +77,4 @@ const BloodSchema = mongoose.Schema({
   },
 });
 
-module.exports = mongoose.model("Blood", BloodSchema)
+module.exports = mongoose.model("Blood", BloodSchema);

@@ -2,104 +2,206 @@
 <html>
   <head>
     <title>Blood Donation</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="shortcut icon" href="/images/1539992783.webp" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="/images/1539992783.webp"
+      type="image/x-icon" />
   </head>
   <body>
     <div class="w-full min-h-screen bg-zinc-100">
       <div class="flex h-16 fixed top-0 w-full px-5 z-50 bg-white">
-        <div class="w-[80%]">
-          <% include ./partials/navbar.ejs %>
-        </div>
+        <div class="w-[80%]"><% include ./partials/navbar.ejs %></div>
         <div class="flex gap-x-10 items-center w-[20%] justify-around px-14">
-          <a class="text-lg bg-blue-500 px-5 text-white rounded-lg py-1 hover:bg-blue-700" href="/users/login">Login</a>
-          <a class="text-lg bg-red-500 px-5 text-white rounded-lg py-1 hover:bg-red-700" href="/users/register">Register</a>
+          <a
+            class="text-lg bg-blue-500 px-5 text-white rounded-lg py-1 hover:bg-blue-700"
+            href="/users/login"
+            >Login</a
+          >
+          <a
+            class="text-lg bg-red-500 px-5 text-white rounded-lg py-1 hover:bg-red-700"
+            href="/users/register"
+            >Register</a
+          >
         </div>
       </div>
       <!-- TODO: slider part -->
-      <div class="w-full relative lg:h-[35vw] md:h-[50vw] flex justify-center pt-1">
+      <div
+        class="w-full relative lg:h-[35vw] md:h-[50vw] flex justify-center pt-1">
         <div class="swiper mySwiper w-[95%] mt-16">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide rounded-3xl overflow-hidden relative">
-        <img class="brightness-[.4]" src="https://images.unsplash.com/photo-1638271522560-a247d127deb8?q=80&w=1915&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-        <div class="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] text-center">
-          <h1 class="text-white text-9xl whitespace-nowrap font-mono font-bold">Blood</h1>
-          <p class="uppercase text-2xl text-white font-normal tracking-tighter">Blood contains 7-8% of total body weight in body.</p>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide rounded-3xl overflow-hidden relative">
+              <img
+                class="brightness-[.4]"
+                src="https://images.unsplash.com/photo-1638271522560-a247d127deb8?q=80&w=1915&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="" />
+              <div
+                class="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] text-center">
+                <h1
+                  class="text-white text-9xl whitespace-nowrap font-mono font-bold">
+                  Blood
+                </h1>
+                <p
+                  class="uppercase text-2xl text-white font-normal tracking-tighter">
+                  Blood contains 7-8% of total body weight in body.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide rounded-3xl overflow-hidden relative">
+              <img
+                class="brightness-[.4]"
+                src="https://images.unsplash.com/photo-1615461066159-fea0960485d5?q=80&w=1916&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="" />
+              <div
+                class="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] text-center">
+                <h1
+                  class="text-white text-9xl whitespace-nowrap font-mono font-bold">
+                  Donate
+                </h1>
+                <p
+                  class="uppercase text-2xl text-white font-normal tracking-tighter">
+                  Donate blood to other people and make their life happy.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide rounded-3xl overflow-hidden relative">
+              <img
+                class="brightness-[.4]"
+                src="https://plus.unsplash.com/premium_photo-1681843126728-04eab730febe?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="" />
+              <div
+                class="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] text-center">
+                <h1
+                  class="text-white text-9xl whitespace-nowrap font-mono font-bold">
+                  Join
+                </h1>
+                <p
+                  class="capitalize text-2xl text-white font-normal tracking-tighter">
+                  We Hope you join this epic journey with us.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="swiper-button-next scale-75 font-bold right-5 text-white"></div>
+          <div
+            class="swiper-button-prev scale-75 font-bold left-5 text-white"></div>
+          <div class="swiper-pagination"></div>
+          <div class="autoplay-progress">
+            <svg viewBox="0 0 48 48">
+              <circle cx="24" cy="24" r="20"></circle>
+            </svg>
+            <span></span>
+          </div>
         </div>
-      </div>
-      <div class="swiper-slide rounded-3xl overflow-hidden relative">
-        <img class="brightness-[.4]" src="https://images.unsplash.com/photo-1615461066159-fea0960485d5?q=80&w=1916&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-      <div class="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] text-center">
-          <h1 class="text-white text-9xl whitespace-nowrap font-mono font-bold">Donate</h1>
-          <p class="uppercase text-2xl text-white font-normal tracking-tighter">Donate blood to other people and make their life happy.</p>
-        </div>
-      </div>
-      <div class="swiper-slide rounded-3xl overflow-hidden relative">
-        <img class="brightness-[.4]" src="https://plus.unsplash.com/premium_photo-1681843126728-04eab730febe?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-        <div class="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] text-center">
-          <h1 class="text-white text-9xl whitespace-nowrap font-mono font-bold">Join</h1>
-          <p class="capitalize text-2xl text-white font-normal tracking-tighter">We Hope you join this epic journey with us.</p>
-        </div>
-      </div>
-    </div>
-    <div class="swiper-button-next scale-75 font-bold right-5 text-white"></div>
-    <div class="swiper-button-prev scale-75 font-bold left-5 text-white"></div>
-    <div class="swiper-pagination"></div>
-    <div class="autoplay-progress">
-      <svg viewBox="0 0 48 48">
-        <circle cx="24" cy="24" r="20"></circle>
-      </svg>
-      <span></span>
-    </div>
-  </div>
       </div>
       <div class="w-full min-h-screen px-16">
-        <h1 id="heading" class="mt-32  text-6xl font-bold uppercase text-center pb-4 border-b-4 w-fit border-black">Join us in saving lives through donation</h1>
-        <p  class="text-center pt-2 text-4xl w-4/6 mx-auto font-bold uppercase my-5 text-zinc-600 font-['Open_sans']">"Your blood and organs have the power to breathe life into others. Share that power."</p>
+        <h1
+          id="heading"
+          class="mt-32 text-6xl font-bold uppercase text-center pb-4 border-b-4 w-fit border-black">
+          Join us in saving lives through donation
+        </h1>
+        <p
+          class="text-center pt-2 text-4xl w-4/6 mx-auto font-bold uppercase my-5 text-zinc-600 font-['Open_sans']">
+          "Your blood and organs have the power to breathe life into others.
+          Share that power."
+        </p>
         <div class="w-full h-fit py-10">
           <div class="flex gap-x-52 px-10 items-center">
             <div class="img w-[35vw] h-96 rounded-lg overflow-hidden">
-              <img class="object-cover w-full h-full" src="https://images.unsplash.com/photo-1631815590016-ebce183022ce?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+              <img
+                class="object-cover w-full h-full"
+                src="https://images.unsplash.com/photo-1631815590016-ebce183022ce?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="" />
             </div>
             <div class="w-[30vw] h-fit flex flex-col items-center gap-y-5">
-              <h1 class="text-5xl uppercase w-fit border-b-2 border-black font-mono font-semibold">Blood Test</h1>
-              <p class="text-xl text-justify tracking-tight">We conduct also the blood test in your area or home. If you can't want to go out side or do somekind of long process for blood test.You can call us in this Number +910000000000 we assure you that our agent go your place and collect the blood sample for your blood test.</p>
+              <h1
+                class="text-5xl uppercase w-fit border-b-2 border-black font-mono font-semibold">
+                Blood Test
+              </h1>
+              <p class="text-xl text-justify tracking-tight">
+                We conduct also the blood test in your area or home. If you
+                can't want to go out side or do somekind of long process for
+                blood test.You can call us in this Number +910000000000 we
+                assure you that our agent go your place and collect the blood
+                sample for your blood test.
+              </p>
             </div>
           </div>
         </div>
         <div class="w-full h-fit py-10">
           <div class="flex gap-x-52 px-10 items-center">
             <div class="w-[30vw] h-fit flex flex-col items-center gap-y-5">
-              <h1 class="text-5xl uppercase w-fit border-b-2 border-black font-mono font-semibold whitespace-nowrap">Blood Donation Camp</h1>
-              <p class="text-xl text-justify tracking-tight">We also do blood donation camp in your area, in this camp we provide the best doctors in your place. Who will treat you very carefuly & do some Medical checkup for your better health, or in the camp we also conduct the blood donation event.</p>
+              <h1
+                class="text-5xl uppercase w-fit border-b-2 border-black font-mono font-semibold whitespace-nowrap">
+                Blood Donation Camp
+              </h1>
+              <p class="text-xl text-justify tracking-tight">
+                We also do blood donation camp in your area, in this camp we
+                provide the best doctors in your place. Who will treat you very
+                carefuly & do some Medical checkup for your better health, or in
+                the camp we also conduct the blood donation event.
+              </p>
             </div>
             <div class="img w-[35vw] h-96 rounded-lg overflow-hidden">
-              <img class="object-cover w-full h-full" src="https://images.unsplash.com/photo-1615461066841-6116e61058f4?q=80&w=1883&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+              <img
+                class="object-cover w-full h-full"
+                src="https://images.unsplash.com/photo-1615461066841-6116e61058f4?q=80&w=1883&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="" />
             </div>
           </div>
         </div>
         <div class="w-full h-fit py-10">
           <div class="flex gap-x-52 px-10 items-center">
             <div class="img w-[35vw] h-96 rounded-lg overflow-hidden">
-              <img class="object-cover w-full h-full" src="https://plus.unsplash.com/premium_photo-1682124680071-1cb26719c541?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+              <img
+                class="object-cover w-full h-full"
+                src="https://plus.unsplash.com/premium_photo-1682124680071-1cb26719c541?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="" />
             </div>
             <div class="w-[30vw] h-fit flex flex-col items-center gap-y-5">
-              <h1 class="text-5xl uppercase w-fit border-b-2 border-black font-mono font-semibold whitespace-nowrap">Need of Organ</h1>
-              <p class="text-xl text-justify tracking-tight">In this web-site if you want Organ of any Type we can provided to you. if we can't have the stock, what have you requseted us, we can provide that as soon as possible.</p>
+              <h1
+                class="text-5xl uppercase w-fit border-b-2 border-black font-mono font-semibold whitespace-nowrap">
+                Need of Organ
+              </h1>
+              <p class="text-xl text-justify tracking-tight">
+                In this web-site if you want Organ of any Type we can provided
+                to you. if we can't have the stock, what have you requseted us,
+                we can provide that as soon as possible.
+              </p>
             </div>
           </div>
         </div>
         <div class="w-full h-fit py-10">
           <div class="flex gap-x-52 px-10 items-center">
             <div class="w-[30vw] h-fit flex flex-col items-center gap-y-5">
-              <h1 class="text-5xl uppercase w-fit border-b-2 border-black font-mono font-semibold whitespace-nowrap">Blood-donor</h1>
-              <p class="text-xl text-justify tracking-tight">If you want to join with us as a Blood-Donor, we can provide money as per litter of blood. And we provide a weekly Medical checkup for Blood-Donor. In this duration of Blood-Donor feild, if you had some Medical problem, we can provided the amount <i><b><u>₹50lakh</u></b></i> of Mediclaim.</p>
+              <h1
+                class="text-5xl uppercase w-fit border-b-2 border-black font-mono font-semibold whitespace-nowrap">
+                Blood-donor
+              </h1>
+              <p class="text-xl text-justify tracking-tight">
+                If you want to join with us as a Blood-Donor, we can provide
+                money as per litter of blood. And we provide a weekly Medical
+                checkup for Blood-Donor. In this duration of Blood-Donor feild,
+                if you had some Medical problem, we can provided the amount
+                <i
+                  ><b><u>₹50lakh</u></b></i
+                >
+                of Mediclaim.
+              </p>
             </div>
             <div class="img w-[35vw] h-96 rounded-lg overflow-hidden">
-              <img class="object-cover w-full h-full" src="https://images.unsplash.com/photo-1536856136534-bb679c52a9aa?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+              <img
+                class="object-cover w-full h-full"
+                src="https://images.unsplash.com/photo-1536856136534-bb679c52a9aa?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="" />
             </div>
           </div>
         </div>
@@ -107,107 +209,220 @@
       <div class="bg-zinc-400 w-full h-[1px]"></div>
       <div class="w-full py-10 px-5 h-fit mt-5 overflow-x-hidden">
         <div class="circle-img w-full min-h-[40vh] flex gap-x-52 my-5">
-          <img class="circle-item w-40 h-40 object-cover rounded-full" src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-          <img class="circle-item w-40 h-40 object-cover rounded-full" src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-          <img class="circle-item w-40 h-40 object-cover rounded-full" src="https://images.unsplash.com/photo-1517120026326-d87759a7b63b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-          <img class="circle-item w-40 h-40 object-cover rounded-full" src="https://images.unsplash.com/photo-1578496781985-452d4a934d50?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-          <img class="circle-item w-40 h-40 object-cover rounded-full" src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-          <img class="circle-item w-40 h-40 object-cover rounded-full" src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-          <img class="circle-item w-40 h-40 object-cover rounded-full" src="https://images.unsplash.com/photo-1517120026326-d87759a7b63b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-          <img class="circle-item w-40 h-40 object-cover rounded-full" src="https://images.unsplash.com/photo-1578496781985-452d4a934d50?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-          <img class="circle-item w-40 h-40 object-cover rounded-full" src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-          <img class="circle-item w-40 h-40 object-cover rounded-full" src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-          <img class="circle-item w-40 h-40 object-cover rounded-full" src="https://images.unsplash.com/photo-1517120026326-d87759a7b63b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-          <img class="circle-item w-40 h-40 object-cover rounded-full" src="https://images.unsplash.com/photo-1578496781985-452d4a934d50?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+          <img
+            class="circle-item w-40 h-40 object-cover rounded-full"
+            src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="" />
+          <img
+            class="circle-item w-40 h-40 object-cover rounded-full"
+            src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="" />
+          <img
+            class="circle-item w-40 h-40 object-cover rounded-full"
+            src="https://images.unsplash.com/photo-1517120026326-d87759a7b63b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="" />
+          <img
+            class="circle-item w-40 h-40 object-cover rounded-full"
+            src="https://images.unsplash.com/photo-1578496781985-452d4a934d50?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="" />
+          <img
+            class="circle-item w-40 h-40 object-cover rounded-full"
+            src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="" />
+          <img
+            class="circle-item w-40 h-40 object-cover rounded-full"
+            src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="" />
+          <img
+            class="circle-item w-40 h-40 object-cover rounded-full"
+            src="https://images.unsplash.com/photo-1517120026326-d87759a7b63b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="" />
+          <img
+            class="circle-item w-40 h-40 object-cover rounded-full"
+            src="https://images.unsplash.com/photo-1578496781985-452d4a934d50?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="" />
+          <img
+            class="circle-item w-40 h-40 object-cover rounded-full"
+            src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="" />
+          <img
+            class="circle-item w-40 h-40 object-cover rounded-full"
+            src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="" />
+          <img
+            class="circle-item w-40 h-40 object-cover rounded-full"
+            src="https://images.unsplash.com/photo-1517120026326-d87759a7b63b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="" />
+          <img
+            class="circle-item w-40 h-40 object-cover rounded-full"
+            src="https://images.unsplash.com/photo-1578496781985-452d4a934d50?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="" />
         </div>
-        <h1 class="text-6xl w-4/5 text-zinc-500 leading-relaxed uppercase text-center -my-28 mx-auto font-black font-['Montserrat_Alternates']">"When you donate an organ, you donate a future."</h1>
+        <h1
+          class="text-6xl w-4/5 text-zinc-500 leading-relaxed uppercase text-center -my-28 mx-auto font-black font-['Montserrat_Alternates']">
+          "When you donate an organ, you donate a future."
+        </h1>
 
-        <h1 class="mt-20 text-9xl font-mono flex items-center justify-center gap-x-20 font-semibold">So Which was you <span class="text-red-600 text-[15vw] font-sans font-thin">?</span></h1>
-        <div class="w-full h-fit flex justify-center gap-x-20 mt-20 items-center">
+        <h1
+          class="mt-20 text-9xl font-mono flex items-center justify-center gap-x-20 font-semibold">
+          So Which was you
+          <span class="text-red-600 text-[15vw] font-sans font-thin">?</span>
+        </h1>
+        <div
+          class="w-full h-fit flex justify-center gap-x-20 mt-20 items-center">
           <a href="">
-          <div id="donar" class="relative w-96 h-52">
-            <img class="h-full w-full absolute object-cover object-[center_70%] rounded-xl brightness-[60%]" src="https://images.unsplash.com/photo-1542884841-9f546e727bca?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-          <span class="absolute inline-block h-full w-full flex items-center justify-center pl-6 text-white text-2xl uppercase font-semibold">Donar</span>
-          </div>
+            <div id="donar" class="relative w-96 h-52">
+              <img
+                class="h-full w-full absolute object-cover object-[center_70%] rounded-xl brightness-[60%]"
+                src="https://images.unsplash.com/photo-1542884841-9f546e727bca?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="" />
+              <span
+                class="absolute inline-block h-full w-full flex items-center justify-center pl-6 text-white text-2xl uppercase font-semibold"
+                >Donar</span
+              >
+            </div>
           </a>
           <span class="text-4xl font-mono font-thin">OR</span>
           <a href="">
-          <div id="reciver" class="relative w-96 h-52">
-            <img class="w-full h-full absolute object-cover object-[center_70%] rounded-xl brightness-[70%]" src="https://images.unsplash.com/photo-1625869736621-784a42674da4?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-            <span class="absolute text-white text-2xl uppercase font-semibold inline-block h-full w-full flex items-center justify-center pl-6">Receiver</span>
-          </div>
+            <div id="reciver" class="relative w-96 h-52">
+              <img
+                class="w-full h-full absolute object-cover object-[center_70%] rounded-xl brightness-[70%]"
+                src="https://images.unsplash.com/photo-1625869736621-784a42674da4?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="" />
+              <span
+                class="absolute text-white text-2xl uppercase font-semibold inline-block h-full w-full flex items-center justify-center pl-6"
+                >Receiver</span
+              >
+            </div>
           </a>
         </div>
       </div>
       <div class="bg-zinc-400 w-full h-[1px] mb-5"></div>
       <div class="w-full h-fit py-5 bg-zinc-900 text-white">
-        <div class="footer py-16 px-10 flex justify-between text-lg text-zinc-400 font-semibold text-justify">
-  <div class=" leading-[2vw]">
-    <h4 class="text-white text-xl">Contact Us</h4>
-    <p class="text-base leading-[3.5vw]">Phone: 8001165553</p>
-    <p class="text-base leading-[3.5vw]">Email: nfgaming4523@gmail.com</p>
-    <p class="text-base leading-[3.5vw]">Address: 88,Steel Park,Durgapur - 713206</p>
-  </div>
+        <div
+          class="footer py-16 px-10 flex justify-between text-lg text-zinc-400 font-semibold text-justify">
+          <div class="leading-[2vw]">
+            <h4 class="text-white text-xl">Contact Us</h4>
+            <p class="text-base leading-[3.5vw]">Phone: 8001165553</p>
+            <p class="text-base leading-[3.5vw]">
+              Email: nfgaming4523@gmail.com
+            </p>
+            <p class="text-base leading-[3.5vw]">
+              Address: 88,Steel Park,Durgapur - 713206
+            </p>
+          </div>
 
-  <div class="w-32 leading-[2vw]">
-    <h4 class="text-white text-xl">Quick Links</h4>
-    <ul>
-      <li class="text-base leading-[3.5vw]"><a href="/about">About Us</a></li>
-      <li class="text-base leading-[3.5vw]"><a href="/donate">How to Donate</a></li>
-      <li class="text-base leading-[3.5vw]"><a href="/receive">How to Receive</a></li>
-      <li class="text-base leading-[3.5vw]"><a href="/faq">FAQs</a></li>
-    </ul>
-  </div>
+          <div class="w-32 leading-[2vw]">
+            <h4 class="text-white text-xl">Quick Links</h4>
+            <ul>
+              <li class="text-base leading-[3.5vw]">
+                <a href="/about">About Us</a>
+              </li>
+              <li class="text-base leading-[3.5vw]">
+                <a href="/donate">How to Donate</a>
+              </li>
+              <li class="text-base leading-[3.5vw]">
+                <a href="/receive">How to Receive</a>
+              </li>
+              <li class="text-base leading-[3.5vw]"><a href="/faq">FAQs</a></li>
+            </ul>
+          </div>
 
-  <div class=" leading-[2vw]">
-    <h4 class="text-white text-xl">Legal</h4>
-    <ul>
-      <li class="text-base leading-[3.5vw]"><a href="/privacy-policy">Privacy Policy</a></li>
-      <li class="text-base leading-[3.5vw]"><a href="/terms">Terms & Conditions</a></li>
-      <li class="text-base leading-[3.5vw]"><a href="/disclaimer">Disclaimer</a></li>
-    </ul>
-  </div>
-  <div class=" leading-[2vw]">
-    <h4 class="text-white text-xl">Resources</h4>
-    <ul>
-      <li class="text-base leading-[3.5vw]"><a href="/blog">Blog</a></li>
-      <li class="text-base leading-[3.5vw]"><a href="/stories">Success Stories</a></li>
-      <li class="text-base leading-[3.5vw]"><a href="/events">Events</a></li>
-      <li class="text-base leading-[3.5vw]"><a href="/press">Press Releases</a></li>
-    </ul>
-  </div>
-  <div class=" leading-[2vw]">
-    <h4 class="text-white text-xl">Support</h4>
-    <ul>
-      <li class="text-base leading-[3.5vw]"><a href="/help">Help Center</a></li>
-      <li class="text-base leading-[3.5vw]"><a href="/contact">Contact Form</a></li>
-      <li class="text-base leading-[3.5vw]"><a href="/volunteer">Volunteer</a></li>
-    </ul>
-  </div>
-  <div class=" leading-[2vw]">
-    <h4 class="text-white text-xl">Donation</h4>
-    <ul>
-      <li class="text-base leading-[3.5vw]"><a href="/ways-to-donate">Ways to Donate</a></li>
-      <li class="text-base leading-[3.5vw]"><a href="/centers">Donation Centers</a></li>
-      <li class="text-base leading-[3.5vw]"><a href="/financial-donations">Financial Donations</a></li>
-    </ul>
-  </div>
-  <div class=" leading-[2vw]">
-    <h4 class="text-white text-xl mb-3">Accessibility</h4>
-    <p class="w-40 text-base leading-[2vw]">We are committed to making our website accessible to all.<br> <a class="font-bold text-lg" href="/accessibility">Learn more</a></p>
-  </div>
+          <div class="leading-[2vw]">
+            <h4 class="text-white text-xl">Legal</h4>
+            <ul>
+              <li class="text-base leading-[3.5vw]">
+                <a href="/privacy-policy">Privacy Policy</a>
+              </li>
+              <li class="text-base leading-[3.5vw]">
+                <a href="/terms">Terms & Conditions</a>
+              </li>
+              <li class="text-base leading-[3.5vw]">
+                <a href="/disclaimer">Disclaimer</a>
+              </li>
+            </ul>
+          </div>
+          <div class="leading-[2vw]">
+            <h4 class="text-white text-xl">Resources</h4>
+            <ul>
+              <li class="text-base leading-[3.5vw]">
+                <a href="/blog">Blog</a>
+              </li>
+              <li class="text-base leading-[3.5vw]">
+                <a href="/stories">Success Stories</a>
+              </li>
+              <li class="text-base leading-[3.5vw]">
+                <a href="/events">Events</a>
+              </li>
+              <li class="text-base leading-[3.5vw]">
+                <a href="/press">Press Releases</a>
+              </li>
+            </ul>
+          </div>
+          <div class="leading-[2vw]">
+            <h4 class="text-white text-xl">Support</h4>
+            <ul>
+              <li class="text-base leading-[3.5vw]">
+                <a href="/help">Help Center</a>
+              </li>
+              <li class="text-base leading-[3.5vw]">
+                <a href="/contact">Contact Form</a>
+              </li>
+              <li class="text-base leading-[3.5vw]">
+                <a href="/volunteer">Volunteer</a>
+              </li>
+            </ul>
+          </div>
+          <div class="leading-[2vw]">
+            <h4 class="text-white text-xl">Donation</h4>
+            <ul>
+              <li class="text-base leading-[3.5vw]">
+                <a href="/ways-to-donate">Ways to Donate</a>
+              </li>
+              <li class="text-base leading-[3.5vw]">
+                <a href="/centers">Donation Centers</a>
+              </li>
+              <li class="text-base leading-[3.5vw]">
+                <a href="/financial-donations">Financial Donations</a>
+              </li>
+            </ul>
+          </div>
+          <div class="leading-[2vw]">
+            <h4 class="text-white text-xl mb-3">Accessibility</h4>
+            <p class="w-40 text-base leading-[2vw]">
+              We are committed to making our website accessible to all.<br />
+              <a class="font-bold text-lg" href="/accessibility">Learn more</a>
+            </p>
+          </div>
         </div>
-        <div class="w-full h-fit flex justify-center items-center text-4xl pb-10 gap-x-10 text-zinc-400">
-          <a href=""><i class="ri-facebook-circle-line hover:text-zinc-100 hover:drop-shadow-[0px_0px_10px_white]"></i></a>
-          <a href=""><i class="ri-linkedin-box-fill hover:text-zinc-100 hover:drop-shadow-[0px_0px_10px_white]"></i></a>
-          <a href=""><i class="ri-github-fill hover:text-zinc-100 hover:drop-shadow-[0px_0px_10px_white]"></i></a>
-          <a href=""><i class="ri-instagram-line hover:text-zinc-100 hover:drop-shadow-[0px_0px_10px_white]"></i></a>
+        <div
+          class="w-full h-fit flex justify-center items-center text-4xl pb-10 gap-x-10 text-zinc-400">
+          <a href=""
+            ><i
+              class="ri-facebook-circle-line hover:text-zinc-100 hover:drop-shadow-[0px_0px_10px_white]"></i
+          ></a>
+          <a href=""
+            ><i
+              class="ri-linkedin-box-fill hover:text-zinc-100 hover:drop-shadow-[0px_0px_10px_white]"></i
+          ></a>
+          <a href=""
+            ><i
+              class="ri-github-fill hover:text-zinc-100 hover:drop-shadow-[0px_0px_10px_white]"></i
+          ></a>
+          <a href=""
+            ><i
+              class="ri-instagram-line hover:text-zinc-100 hover:drop-shadow-[0px_0px_10px_white]"></i
+          ></a>
         </div>
-        <h1 class="text-center"> CopyRight &copy; by Sc-Designs</h1>
+        <h1 class="text-center">CopyRight &copy; by Sc-Designs</h1>
       </div>
     </div>
   </body>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
   <script src="/javascripts/index.js"></script>
 </html>

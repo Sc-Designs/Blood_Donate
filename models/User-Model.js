@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 const UserSchema = mongoose.Schema({
   Fullname: String,
   Gender: String,
@@ -41,7 +41,7 @@ const UserSchema = mongoose.Schema({
     type: Array,
     default: [],
   },
-  Picture: String,
+  Picture: Buffer,
   Verified: {
     type: Boolean,
     default: false,

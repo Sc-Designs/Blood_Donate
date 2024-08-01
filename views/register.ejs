@@ -1,68 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="/stylesheets/register.css">
-    <link rel="shortcut icon" href="/images/1539992783.webp" type="image/x-icon">
+    <link rel="stylesheet" href="/stylesheets/register.css" />
+    <link
+      rel="shortcut icon"
+      href="/images/1539992783.webp"
+      type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet" />
     <title>Register</title>
-</head>
-<body>
-    <div class="w-full h-screen relative overflow-hidden bg-zinc-200">
-        <div class="rounded-full w-80 h-80 circle absolute top-20"></div>
-        <div class="rounded-full w-96 h-96 circle absolute top-10 left-[95%] -translate-y-[50%] -translate-x-[50%] z-10"></div>
-        <div id="bar" class="h-screen w-80 bg-black absolute left-40"></div>
-        <div class="rounded-full w-40 h-40 circle absolute top-16 right-80"></div>
-        <div id="circle" class="rounded-full w-20 h-20 absolute top-48 right-28"></div>
-        <div id="curcle" class="rounded-full w-80 h-80 absolute -right-28 bottom-10"></div>
-        <div id="big-curcle" class="rounded-full w-[70vw] h-[70vw] absolute left-[50%] -translate-x-[50%] -translate-y-[50%] top-[125%] z-20"></div>
-        <div id="curcle" class="rounded-full w-80 h-80 absolute -translate-x-[50%] left-[65%] bottom-28"></div>
-        <div class="absolute w-full h-screen top-0 left-0 z-50 flex justify-center items-center flex-col">
-            <form action="" class="flex flex-col gap-y-5 px-10 py-2 w-fit h-fit relative">
-                <span class="flex justify-between items-center gap-x-5">
-                    <span class="font-semibold text-lg font-mono uppercase">Fullname - </span>
-                    <input ut class="w-80 h-10 rounded-xl border-[1px] border-black outline-none px-2" type="text">
-                </span>
-                <span class="flex justify-between items-center gap-x-5">
-                    <span class="font-semibold text-lg font-mono uppercase">Email - </span>
-                    <input class="w-80 h-10 rounded-xl border-[1px] border-black outline-none px-2" type="email">
-                </span>
-                <span class="flex justify-between items-center gap-x-5">
-                    <span class="font-semibold text-lg font-mono uppercase">Phone - </span>
-                    <input class="w-80 h-10 rounded-xl border-[1px] border-black outline-none px-2" type="text">
-                </span>
-                <span class="flex justify-between items-center gap-x-5">
-                    <span class="font-semibold text-lg font-mono uppercase">Blood gr - </span>
-                    <input class="w-80 h-10 rounded-xl border-[1px] border-black outline-none px-2" type="text">
-                </span>
-                <span class="flex justify-between items-center gap-x-5">
-                    <span class="font-semibold text-lg font-mono uppercase">Dob - </span>
-                    <input class="w-80 h-10 rounded-xl border-[1px] border-black outline-none px-2" type="date">
-                </span>
-                <span class="flex items-center gap-x-5 ml-24 radios">
-                    <input type="radio" name="gender" class="w-5 h-5 bg-red-500" value="male" id="1">
-                    <span class="text-lg font-semibold">Male</span>
-                    <input type="radio" name="gender" class="w-5 h-5 bg-red-500" value="female" id="2">
-                    <span class="text-lg font-semibold">Female</span>
-                    <input type="radio" name="gender" class="w-5 h-5 bg-red-500" value="other" id="3">
-                    <span class="text-lg font-semibold">Other</span>
-                </span>
-                <span class="flex justify-between items-center gap-x-5">
-                    <span class="font-semibold text-lg font-mono uppercase">Password - </span>
-                    <input class="w-80 h-10 rounded-xl border-[1px] border-black outline-none px-2" type="password">
-                </span>
-                <span class="flex justify-between items-center gap-x-5">
-                    <span class="font-semibold text-lg font-mono uppercase">Conform Password - </span>
-                    <input class="w-80 h-10 rounded-xl border-[1px] border-black outline-none px-2" type="password">
-                </span>
-                <input id="button" type="button" value="Sign-in" class="px-24 py-3 w-fit absolute -translate-x-[50%] left-[50%] -bottom-20 text-white rounded-full" >
-            </form>
-            <span class="absolute bottom-10 text-lg flex gap-x-2">
-                <span>if you have an account </span>
-                <a href="/users/login" class="underline text-purple-700 hover:font-semibold w-20 text-center">- Login -</a>
+  </head>
+  <body>
+    <div class="w-full min-h-screen relative overflow-hidden bg-zinc-200">
+      <div class="rounded-full w-80 h-80 circle absolute top-20"></div>
+      <div
+        class="rounded-full w-96 h-96 circle absolute top-10 left-[95%] -translate-y-[50%] -translate-x-[50%] z-10"></div>
+      <div id="bar" class="h-screen w-80 bg-black absolute left-40"></div>
+      <div class="rounded-full w-40 h-40 circle absolute top-16 right-80"></div>
+      <div
+        id="circle"
+        class="rounded-full w-20 h-20 absolute top-48 right-28"></div>
+      <div
+        id="curcle"
+        class="rounded-full w-80 h-80 absolute -right-28 bottom-10"></div>
+      <div
+        id="big-curcle"
+        class="rounded-full w-[70vw] h-[70vw] absolute left-[50%] -translate-x-[50%] -translate-y-[50%] top-[125%] z-20"></div>
+      <div
+        id="curcle"
+        class="rounded-full w-80 h-80 absolute -translate-x-[50%] left-[65%] bottom-28"></div>
+      <div
+        class="absolute w-full h-screen top-0 left-0 z-50 flex justify-center items-center flex-col">
+        <form
+          action=""
+          class="flex flex-col gap-y-5 px-10 py-14 w-fit h-fit rounded-3xl">
+          <span class="flex justify-between items-center gap-x-5">
+            <span class="font-semibold text-lg font-mono uppercase pointer-events-none"
+              >Fullname -
             </span>
-        </div>
+            <input
+              ut
+              class="w-80 h-10 rounded-xl border-[1px] border-black outline-none px-2"
+              type="text" />
+          </span>
+          <span class="flex justify-between items-center gap-x-5">
+            <span class="font-semibold text-lg font-mono uppercase pointer-events-none"
+              >Email -
+            </span>
+            <input
+              class="w-80 h-10 rounded-xl border-[1px] border-black outline-none px-2"
+              type="email" />
+          </span>
+          <span class="flex justify-between items-center gap-x-5">
+            <span class="font-semibold text-lg font-mono uppercase pointer-events-none"
+              >Phone -
+            </span>
+            <input
+              class="w-80 h-10 rounded-xl border-[1px] border-black outline-none px-2"
+              type="text" />
+          </span>
+          <span class="flex justify-between items-center gap-x-5">
+            <span class="font-semibold text-lg font-mono uppercase pointer-events-none"
+              >Blood gr -
+            </span>
+            <input
+              class="w-80 h-10 rounded-xl border-[1px] border-black outline-none px-2"
+              type="text" />
+          </span>
+          <span class="flex justify-between items-center gap-x-5">
+            <span class="font-semibold text-lg font-mono uppercase pointer-events-none"
+              >Dob -
+            </span>
+            <input
+              class="w-80 h-10 rounded-xl border-[1px] border-black outline-none px-2"
+              type="date" />
+          </span>
+          <span class="flex items-center gap-x-5 ml-24 radios">
+            <input
+              type="radio"
+              name="gender"
+              class="w-5 h-5 bg-red-500"
+              value="male"
+              id="1" />
+            <span class="text-lg font-semibold pointer-events-none">Male</span>
+            <input
+              type="radio"
+              name="gender"
+              class="w-5 h-5 bg-red-500"
+              value="female"
+              id="2" />
+            <span class="text-lg font-semibold pointer-events-none">Female</span>
+            <input
+              type="radio"
+              name="gender"
+              class="w-5 h-5 bg-red-500"
+              value="other"
+              id="3" />
+            <span class="text-lg font-semibold pointer-events-none">Other</span>
+          </span>
+          <span class="flex justify-between items-center gap-x-5">
+            <span class="font-semibold text-lg font-mono uppercase pointer-events-none"
+              >Password -
+            </span>
+            <input
+              class="pass w-80 h-10 rounded-xl border-[1px] border-black outline-none px-2 relative"
+              type="password" />
+              <span id="eye1" class="absolute right-12">
+                <i class="ri-eye-off-line text-lg"></i>
+              </span>
+            </span>
+            <span class="flex justify-between items-center gap-x-5">
+              <span class="font-semibold text-lg font-mono uppercase pointer-events-none"
+              >Conform Password -
+            </span>
+            <span class="flex flex-col items-start mt-5">
+              <input
+              class="conpass w-80 h-10 rounded-xl border-[1px] border-black outline-none px-2 relative"
+              type="password" />
+              <span id="eye2" class="absolute right-12 mt-2">
+                <i class="ri-eye-off-line text-lg"></i>
+              </span>
+              <p
+              id="wrong"
+                class="text-red-600 font-semibold bg-black rounded-full capitalize mt-1 px-2 pointer-events-none"></p>
+            </span>
+          </span>
+          <input
+            id="button"
+            type="button"
+            value="Sign-in"
+            class="px-24 py-3 w-fit mx-auto text-white rounded-full mt-2" />
+          <span class="text-lg flex gap-x-2 mt-2 mx-auto">
+            <span>if you have an account </span>
+            <a
+              href="/users/login"
+              class="underline text-zinc-100 hover:font-semibold w-20 text-center"
+              >- Login -</a
+            >
+          </span>
+        </form>
+      </div>
     </div>
-</body>
+  </body>
 </html>
+<script>
+  let password = document.querySelector(".pass");
+  let conpass = document.querySelector(".conpass");
+  let wrong = document.querySelector("#wrong");
+  conpass.addEventListener("input", function () {
+    if (password.value != conpass.value) {
+      document.getElementById("button").disabled = true;
+      wrong.innerHTML = "your conform password doesn't match";
+      wrong.style.color = "red";
+    } else {
+      document.getElementById("button").disabled = false;
+      wrong.innerHTML = "Your conform password is match";
+      wrong.style.color = "#6CDE64";
+    }
+  });
+  password.addEventListener('input', ()=>{
+    wrong.innerHTML = '';
+  })
+  let eye1 = document.querySelector("#eye1");
+  let eye2 = document.querySelector("#eye2");
+  let flag1 = 0;
+  let flag2 = 0;
+  eye1.addEventListener('click', function(){
+    if(flag1 == 0){
+      password.type = "text";
+      flag1 = 1;
+      eye1.innerHTML= `<i class="ri-eye-line text-lg"></i>`;
+    }else{
+      password.type = "password";
+      flag1 = 0;
+      eye1.innerHTML= `<i class="ri-eye-off-line text-lg"></i>`;
+    }
+  })
+  eye2.addEventListener('click', function(){
+    if(flag2 == 0){
+      conpass.type = "text";
+      flag2 = 1;
+      eye2.innerHTML= `<i class="ri-eye-line text-lg"></i>`;
+    }else{
+      conpass.type = "password";
+      flag2 = 0;
+      eye2.innerHTML= `<i class="ri-eye-off-line text-lg"></i>`;
+    }
+  })
+</script>

@@ -1,8 +1,8 @@
-const mongoose = require('mongoose');
-const config = require('config');
-const dbgr = require('debug')("development:mongoose");
+const mongoose = require("mongoose");
+const config = require("config");
+const dbgr = require("debug")("development:mongoose");
 
-mongoose.set('debug', dbgr);
+mongoose.set("debug", dbgr);
 
 mongoose
   .connect(`${config.get("MONGODB")}/BloodWeb`)

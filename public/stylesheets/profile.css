@@ -41,6 +41,9 @@ html, body {
     background-image: linear-gradient(to bottom, #dd0303, #bb1316, #981c1e, #752021, #522121);
     box-shadow: 2px 2px 20px #0000008f;
 }
+#edit{
+    filter: drop-shadow(2px 2px 10px #000000b1);
+}
 @media (max-width: 1500px) {
     #top-right-circle{
         top:-5%;

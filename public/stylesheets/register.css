@@ -36,4 +36,7 @@ html,body{
 input[type="radio"]{
     accent-color: red;
 }
-   
+form {
+    background: linear-gradient(rgba(170, 170, 170, 0.493), rgba(0, 0, 0, 0.425));
+    backdrop-filter: blur(20px);
+}

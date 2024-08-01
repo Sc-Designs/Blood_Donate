@@ -1,42 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="/stylesheets/profile.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/stylesheets/profile.css" />
     <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
-    rel="stylesheet"
-/>
-<link rel="shortcut icon" href="/images/1539992783.webp" type="image/x-icon">
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet" />
+    <link
+      rel="shortcut icon"
+      href="/images/1539992783.webp"
+      type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet" />
     <title>Profile</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container w-full h-screen relative">
-        <a id="logout" href="/users/logout" class="fixed right-20 top-5 lg:px-14 sm:px-5 py-2 logout rounded-full text-white text-xl">Logout</a>
-        <div class="text-3xl font-bold ml-5 mt-5 fixed z-50"><i class="ri-menu-2-line"></i></div>
+      <a
+        id="logout"
+        href="/users/logout"
+        class="fixed right-20 top-5 lg:px-14 sm:px-5 py-2 logout rounded-full text-white text-xl"
+        >Logout</a
+      >
+      <div class="text-3xl font-bold ml-5 mt-5 fixed z-50">
+        <i class="ri-menu-2-line"></i>
+      </div>
     </div>
-    <div id="top-right-circle" class="rounded-full w-[30vw] h-[30vw] circle fixed -top-28 left-16"></div>
-    <div id="top-left-circle" class="rounded-full w-96 h-96 circle fixed top-0 -translate-y-[50%] right-96"></div>
-    <h1 id="username" class="fixed top-[34%] font-mono uppercase text-3xl left-[50%] -translate-x-[50%] z-20"><%= user.Fullname %></h1>
-    <h3 id="email" class="fixed top-[38%] font-mono text-xl left-[50%] -translate-x-[50%] z-50 whitespace-nowrap">Email:- <%= user.Email %></h3>
-    <div id="big-perple-circle" class="rounded-full w-60 h-60 curcle fixed top-20 left-[30%]"></div>
-    <div id="small-perple-circle" class="rounded-full w-[20vw] h-[20vw] curcle fixed top-[42%] left-[50%] -translate-x-[50%]"></div>
-    <div id="half-circle" class=" half-circle fixed top-[57%] -translate-x-[50%] right-[50%]"></div>
-    <div id="side-circle" class="rounded-full w-[32vw] h-[32vw] big-curcle fixed top-[15%] left-[87%] -translate-x-[50%] z-10"></div>
-    <div class="rounded-full w-52 h-52 fixed top-14 left-[50%] -translate-x-[50%] overflow-hidden z-50">
-        <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1715966966827-25a227141ee9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+    <div
+      id="top-right-circle"
+      class="rounded-full w-[30vw] h-[30vw] circle fixed -top-28 left-16"></div>
+    <div
+      id="top-left-circle"
+      class="rounded-full w-96 h-96 circle fixed top-0 -translate-y-[50%] right-96"></div>
+    <h1
+      id="username"
+      class="fixed top-[34%] font-mono uppercase text-3xl left-[50%] -translate-x-[50%] z-20">
+      <%= user.Fullname %>
+    </h1>
+    <h3
+      id="email"
+      class="fixed top-[38%] font-mono text-xl left-[50%] -translate-x-[50%] z-50 whitespace-nowrap">
+      Email:- <%= user.Email %>
+    </h3>
+    <div
+      id="big-perple-circle"
+      class="rounded-full w-60 h-60 curcle fixed top-20 left-[30%]"></div>
+    <div
+      id="small-perple-circle"
+      class="rounded-full w-[20vw] h-[20vw] curcle fixed top-[42%] left-[50%] -translate-x-[50%]"></div>
+    <div
+      id="half-circle"
+      class="half-circle fixed top-[57%] -translate-x-[50%] right-[50%]"></div>
+    <div
+      id="side-circle"
+      class="rounded-full w-[32vw] h-[32vw] big-curcle fixed top-[15%] left-[87%] -translate-x-[50%] z-10"></div>
+    <div
+      class="rounded-full w-52 h-52 fixed top-12 left-[50%] -translate-x-[50%] z-50">
+      <img
+        class="w-full h-full object-cover rounded-full"
+        src="https://images.unsplash.com/photo-1715966966827-25a227141ee9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="" />
+      <i id="edit" class="ri-pencil-fill absolute bottom-3 right-3 bg-zinc-200 px-2 py-1 rounded-full text-xl"></i>
     </div>
-    <div id="card" class="card w-[30vw] h-[19vw] fixed bottom-10 left-[7%] rounded-3xl">
-        <img class="w-14 h-10 object-cover rounded-md right-5 top-16 absolute" src="/images/360_F_558821368_sEwuiNkNo9K2aL6nTeTWMppvQaue6Nwx.jpg" alt="">
-        <h1 class="text-center mt-2 text-5xl font-['Colonna_MT'] text-white">Blood Card</h1>
-        <h1 class="ml-4 mt-2 text-white lg:text-xl md:text-xl sm:text-base xl:text-xl sm:tracking-widest lg:tracking-tight font-semibold font-mono">NAME - <%= user.Fullname %></h1>
-        <h1 class="ml-4 mt-2 text-white lg:text-xl md:text-xl sm:text-base xl:text-xl sm:tracking-widest lg:tracking-tight font-semibold font-mono">ADDRESS - <%= user.Address %></h1>
-        <h1 class="ml-4 mt-2 text-white lg:text-xl md:text-xl sm:text-base xl:text-xl sm:tracking-widest lg:tracking-tight font-semibold font-mono">BLOOD GR. - <%= user.BloodGroup %></h1>
-        <h1 class="ml-4 mt-2 text-white lg:text-xl md:text-xl sm:text-base xl:text-xl sm:tracking-widest lg:tracking-tight font-semibold font-mono">DOB - <%= user.Dob %></h1>
-        <h1 class="ml-4 mt-2 text-white lg:text-xl md:text-xl sm:text-base xl:text-xl sm:tracking-widest lg:tracking-tight font-semibold font-mono">PHONE NO. - <%= user.Contact %></h1>
-        <h1 class="ml-4 mt-6 text-white lg:text-xl md:text-xl sm:text-base xl:text-xl sm:tracking-widest lg:tracking-tight font-semibold font-mono text-center">UID - 0000000001</h1>
+    <form action="">
+      <input type="file" name="" id="pic" class="hidden">
+      <input type="button" value="" id="btn">
+    </form>
+    <div
+      id="card"
+      class="card w-[30vw] h-[19vw] fixed bottom-10 left-[7%] rounded-3xl">
+      <img
+        class="w-14 h-10 object-cover rounded-md right-5 top-16 absolute"
+        src="/images/360_F_558821368_sEwuiNkNo9K2aL6nTeTWMppvQaue6Nwx.jpg"
+        alt="" />
+      <h1 class="text-center mt-2 text-5xl font-['Colonna_MT'] text-white">
+        Blood Card
+      </h1>
+      <h1
+        class="ml-4 mt-2 text-white lg:text-xl md:text-xl sm:text-base xl:text-xl sm:tracking-widest lg:tracking-tight font-semibold font-mono">
+        NAME - <%= user.Fullname %>
+      </h1>
+      <h1
+        class="ml-4 mt-2 text-white lg:text-xl md:text-xl sm:text-base xl:text-xl sm:tracking-widest lg:tracking-tight font-semibold font-mono">
+        ADDRESS - <%= user.Address %>
+      </h1>
+      <h1
+        class="ml-4 mt-2 text-white lg:text-xl md:text-xl sm:text-base xl:text-xl sm:tracking-widest lg:tracking-tight font-semibold font-mono">
+        BLOOD GR. - <%= user.BloodGroup %>
+      </h1>
+      <h1
+        class="ml-4 mt-2 text-white lg:text-xl md:text-xl sm:text-base xl:text-xl sm:tracking-widest lg:tracking-tight font-semibold font-mono">
+        DOB - <%= user.Dob %>
+      </h1>
+      <h1
+        class="ml-4 mt-2 text-white lg:text-xl md:text-xl sm:text-base xl:text-xl sm:tracking-widest lg:tracking-tight font-semibold font-mono">
+        PHONE NO. - <%= user.Contact %>
+      </h1>
+      <h1
+        class="ml-4 mt-6 text-white lg:text-xl md:text-xl sm:text-base xl:text-xl sm:tracking-widest lg:tracking-tight font-semibold font-mono text-center">
+        UID - 0000000001
+      </h1>
     </div>
-</body>
+  </body>
 </html>
+<script>
+  let edit = document.getElementById('edit');
+  let pic = document.getElementById('pic');
+  let btn = document.getElementById('btn');
+  edit.addEventListener('click', () => {
+    pic.click();
+  });
+  pic.addEventListener('change', () => {
+    btn.click();
+  })
+</script>
