@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html , body {
+    height: 100%;
+    width: 100%;
+}
+.link-hover {
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+    border: 2px dotted #000;
+    overflow: hidden;
+}
+
+.link-hover:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    transition: all 0.5s ease;
+    opacity: 0;
+    border-radius: 100%;
+}
+
+.link-hover:hover:after {
+    opacity: 1;
+    left: 0;
+    border-radius: 0;
+}
+
+.link-hover:hover .span {
+    color:#fff;
+    transition: all 0.5s ease;
+}

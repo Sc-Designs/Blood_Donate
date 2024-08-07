@@ -1,6 +1,6 @@
 var express = require("express");
 var router = express.Router();
-const IsLoggedIn = require("../middleware/IsloggedIn");
+const IsLoggedIn = require("../middleware/IsloggedIn.js");
 const User_Model = require("../models/User-Model");
 var upload = require("../config/multer-config");
 
@@ -8,12 +8,9 @@ router.get("/", function (req, res) {
   res.status(200).render("index");
 });
 
-router.get("/profile", IsLoggedIn, async (req, res) => {
+router.get("/profile", IsLoggedIn , async (req, res) => {
   try {
-    if (!req.user) {
-      return res.status(401).send("Unauthorized");
-    }
-    const user = await User_Model.findOne({ _id: req.user._id });
+    const user = await User_Model.findOne({_id: req.user._id});
 
     if (!user) {
       return res.status(404).send("User not found");
@@ -24,7 +21,7 @@ router.get("/profile", IsLoggedIn, async (req, res) => {
       base64Image = user.image.toString("base64");
     }
 
-    res.status(200).render("profile", { user: user, base64Image: base64Image });
+    res.status(200).render("profile", { user: user, base64Image:base64Image });
   } catch (err) {
     res.status(500).send("Internal Server Error");
   }

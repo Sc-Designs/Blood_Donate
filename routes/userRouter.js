@@ -6,9 +6,6 @@ const {
   LogOut,
 } = require("../controllers/UserAuthController");
 /* GET users listing. */
-router.get("/", function (req, res, next) {
-  res.status(200).render("register");
-});
 router.get("/register", (req, res) => {
   let error = req.flash("error");
   res.render("register", { error });

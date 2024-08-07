@@ -8,43 +8,26 @@ const flash = require("connect-flash");
 const http = require("http");
 const socketio = require("socket.io");
 var bodyParser = require("body-parser");
-
-
-
+require("dotenv").config();
 
 var app = express();
 const Server = http.createServer(app);
 const io = socketio(Server);
 
-require("dotenv").config();
+// Include the MongoDB connection
+require("./config/mongoose-connection.js");
 
-const adminRouter = require("./routes/adminRouter");
-const bloodRouter = require("./routes/bloodRouter");
-const donarRouter = require("./routes/donarRouter");
-const indexRouter = require("./routes/indexRouter");
-const usersRouter = require("./routes/userRouter");
+// Import routes
+var adminRouter = require("./routes/adminRouter.js");
+var bloodRouter = require("./routes/bloodRouter.js");
+var donarRouter = require("./routes/donarRouter.js");
+var indexRouter = require("./routes/indexRouter.js");
+var usersRouter = require("./routes/userRouter.js");
+
+// Middleware setup
+app.use(logger("dev"));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-
-
-const db = require("./config/mongoose-connection");
-
-io.on("connection", function (socket) {
-  socket.on("send-location", (data) => {
-    io.emit("recive-location", { id: socket.id, ...data });
-  });
-  console.log("User connected: " + socket.id);
-
-   socket.on("disconnect", () => {
-     io.emit("user-left", socket.id);
-   });
-});
-
-// view engine setup
-app.set("views", path.join(__dirname, "views"));
-app.set("view engine", "ejs");
-
-app.use(logger("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
@@ -58,24 +41,41 @@ app.use(
 app.use(flash());
 app.use(express.static(path.join(__dirname, "public")));
 
+// View engine setup
+app.set("views", path.join(__dirname, "views"));
+app.set("view engine", "ejs");
+
+// Routes
 app.use("/", indexRouter);
 app.use("/users", usersRouter);
-app.use("/admin", adminRouter);
 app.use("/reciver", bloodRouter);
 app.use("/donar", donarRouter);
+app.use("/admin", adminRouter);
 
-// catch 404 and forward to error handler
+// Socket.io setup
+io.on("connection", function (socket) {
+  socket.on("send-location", (data) => {
+    io.emit("recive-location", { id: socket.id, ...data });
+  });
+  console.log("User connected: " + socket.id);
+
+  socket.on("disconnect", () => {
+    io.emit("user-left", socket.id);
+  });
+});
+
+// Catch 404 and forward to error handler
 app.use(function (req, res, next) {
   next(createError(404));
 });
 
-// error handler
+// Error handler
 app.use(function (err, req, res, next) {
-  // set locals, only providing error in development
+  // Set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get("env") === "development" ? err : {};
 
-  // render the error page
+  // Render the error page
   res.status(err.status || 500);
   res.render("error");
 });
